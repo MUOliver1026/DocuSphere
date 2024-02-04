@@ -1,25 +1,34 @@
 
 # DocuSphere
 
-## Description
-
-**DocuSphere** is an innovative cloud-based document management system designed to revolutionize how individuals and teams create, store, share, and collaborate on documents online. Utilizing cutting-edge web technologies and a user-friendly interface, **DocuSphere** ensures a seamless, real-time document editing and collaboration experience. 
+DocuSphere is a cloud-based document management system designed to facilitate the online creation, storage, sharing, and editing of documents with support for version control and team collaboration. Built with modern technologies such as Vite, React, TypeScript, Tailwind CSS, Firebase, Express.js, and MongoDB, DocuSphere aims to provide a seamless and efficient experience for managing documents in the cloud.
 
 ## Features
 
-- **Real-time Collaboration**: Work on documents simultaneously with teammates.
-- **Document Version Control**: Keep track of changes with comprehensive version history.
-- **Secure Document Sharing**: Share documents with customizable permissions.
-- **User Authentication**: Secure user login system with Firebase Authentication.
-- **Responsive Design**: Accessible on various devices with a consistent user experience.
+- **User Authentication:** Secure login and registration using Firebase Authentication.
+- **Document Management:** Create, edit, store, and share documents in real-time.
+- **Real-Time Collaboration:** Multiple users can work on the same document simultaneously.
+- **Version Control:** Track and manage changes to documents.
+- **Responsive Design:** Accessible on desktop and mobile devices.
 
-## Technology Stack
+## Tech Stack
 
-- **Frontend**: Vite, TypeScript, Tailwind CSS
-- **Backend**: Firebase (Firestore/Realtime Database, Firebase Functions, Firebase Hosting, Firebase Authentication)
-- **CI/CD**: GitHub Actions for automated deployment
+- **Frontend:** Vite, React, TypeScript, Tailwind CSS
+- **Backend:** Express.js (Node.js framework), Firebase Functions
+- **Database:** MongoDB
+- **Authentication:** Firebase Authentication
+- **CI/CD:** GitHub Actions, Firebase Hosting
+- **Other Services:** Firebase Realtime Database or Cloud Firestore, Firebase Storage
 
-## Setup Instructions
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+- A Firebase account
+- A MongoDB Atlas account
+
+### Setup
 
 1. **Clone the repository**
 
@@ -30,45 +39,62 @@ cd DocuSphere
 
 2. **Install dependencies**
 
-For the frontend:
+Navigate to the frontend and backend directories in separate terminal windows and run:
 
 ```bash
-cd frontend
-npm install
-```
-
-For Firebase Functions (optional):
-
-```bash
-cd functions
 npm install
 ```
 
 3. **Configure Firebase**
 
-Create a Firebase project and configure the `.env` file with your project's Firebase configuration details.
+- Create a new Firebase project through the Firebase console.
+- Enable Firebase Authentication and Firestore/Realtime Database.
+- Add your Firebase project configuration to your frontend and backend projects.
 
-4. **Run the project**
+4. **Configure MongoDB**
+
+- Set up a new cluster on MongoDB Atlas and obtain your connection string.
+- Add your MongoDB connection string to the backend project's environment variables.
+
+5. **Run the project**
+
+- **Frontend:**
 
 ```bash
-# Run frontend
+cd frontend
 npm run dev
 ```
 
-## Usage
+- **Backend:**
 
-To use **DocuSphere**, simply register an account, log in, and start creating or uploading documents. You can invite others to collaborate by sharing a document link with them.
+```bash
+cd backend
+npm start
+```
+
+## Deployment
+
+- Configure GitHub Actions for CI/CD to automate deployment to Firebase Hosting.
+- Follow the Firebase Hosting documentation to deploy your frontend application.
+- Deploy your backend application using a service like Heroku or directly on a VM in cloud providers like Google Cloud or AWS.
 
 ## Contributing
 
-Contributions to **DocuSphere** are welcome! Whether it's bug reports, feature suggestions, or code contributions, please feel free to reach out or submit a pull request.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Oliver Wu - wuyuanming1998@gmail.com
+
+Project Link: https://github.com/MUOliver1026/DocuSphere
+
