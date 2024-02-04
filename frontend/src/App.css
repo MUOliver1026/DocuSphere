@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.input {
+  @apply px-4 py-2 border rounded-md;
+}
+
+.btn {
+  @apply px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600;
+}
