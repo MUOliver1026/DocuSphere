@@ -14,10 +14,10 @@ DocuSphere is a cloud-based document management system designed to facilitate th
 ## Tech Stack
 
 - **Frontend:** Vite, React, TypeScript, Tailwind CSS
-- **Backend:** Express.js (Node.js framework), Firebase Functions
+- **Backend:** Express.js (Node.js framework)
 - **Database:** MongoDB
-- **Authentication:** Firebase Authentication
-- **CI/CD:** GitHub Actions, Firebase Hosting
+- **Authentication:** Custom authentication using Express.js, MongoDB, bcrypt for password hashing, and jsonwebtoken for session management
+- **CI/CD:** GitHub Actions for continuous integration and continuous deployment
 - **Other Services:** Firebase Realtime Database or Cloud Firestore, Firebase Storage
 
 ## Getting Started

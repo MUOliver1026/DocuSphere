@@ -1,10 +1,17 @@
 import './App.css'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Login from './components/Login'
+import Register from './components/Register'
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='App'>
+      <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
+    </div>
   )
 }
 
