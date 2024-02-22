@@ -5,11 +5,13 @@ const cors = require('cors');
 
 const app = express();
 const userRoutes = require('./routes/user.routes');
+const documentRoutes = require('./routes/documents.routes'); // 使用实际的路径替换此处
 
 // Middleware
 app.use(cors());
 app.use(express.json()); // for parsing application/json
 app.use('/api/users', userRoutes);
+app.use('/api/documents', documentRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {

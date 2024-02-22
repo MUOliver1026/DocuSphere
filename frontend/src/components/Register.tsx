@@ -50,6 +50,6 @@ const Register = () => {
             </form>
         </div>
   )
-}
+};
 
 export default Register
